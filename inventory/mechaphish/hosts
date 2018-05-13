@@ -1,0 +1,25 @@
+[kube-master]
+127.0.0.1 ansible_ssh_pass="qq784400047" ansible_sudo_pass="qq784400047"
+
+[etcd]
+127.0.0.1 ansible_ssh_pass="qq784400047" ansible_sudo_pass="qq784400047"
+
+[kube-node]
+127.0.0.1 ansible_ssh_pass="qq784400047" ansible_sudo_pass="qq784400047"
+
+[kube-cluster]
+# masters and minions, without duplicates
+127.0.0.1 ansible_ssh_pass="qq784400047" ansible_sudo_pass="qq784400047"
+
+[registry]
+127.0.0.1 ansible_ssh_pass="qq784400047" ansible_sudo_pass="qq784400047"
+
+[postgres]
+127.0.0.1 ansible_ssh_pass="qq784400047" ansible_sudo_pass="qq784400047"
+
+# ambassador, ids, and kube-master nodes need to be mutually exclusive
+[ambassador]
+127.0.0.1 ansible_ssh_pass="qq784400047" ansible_sudo_pass="qq784400047"
+
+[ids]
+127.0.0.1 ansible_ssh_pass="qq784400047" ansible_sudo_pass="qq784400047"
