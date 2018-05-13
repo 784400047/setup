@@ -11,7 +11,8 @@
     - { role: kubernetes/preinstall, tags: preinstall }
     - { role: etcd, tags: etcd }
     - { role: docker, tags: docker }
-    - { role: imageprovision, tags: imageprovision }
+#    2017/05/13
+#    - { role: imageprovision, tags: imageprovision }
     - { role: kubernetes/node, tags: node }
 
 - hosts: kube-master
