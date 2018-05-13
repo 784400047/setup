@@ -3,6 +3,12 @@
 This repository contains scripts and data used in managing the configuration of
 the CGC cloud servers.
 
+## Some NOTES by Ts2
+
+1. When docker has sth wrong with network and couldn't start,try these command
+        sudo rm -rf /var/lib/docker/network
+        sudo systemctl start docker
+
 ## Using this repository
 
 1. Get [Ansible](http://www.ansibleworks.com/)
