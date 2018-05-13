@@ -7,7 +7,7 @@ totem {
     interface {
         ringnumber: 0
         broadcast: no
-        bindnetaddr: {{ hostvars[inventory_hostname]['ansible_eth0']['ipv4']['address'] }}
+        bindnetaddr: {{ hostvars[inventory_hostname]['ansible_ens33']['ipv4']['address'] }}
     }
 }
 
@@ -15,7 +15,7 @@ nodelist {
 {% for node in groups[cluster_group] %}
     node {
         name: {{ node }}
-        ring0_addr: {{ hostvars[node]['ansible_eth0']['ipv4']['address'] }}
+        ring0_addr: {{ hostvars[node]['ansible_ens33']['ipv4']['address'] }}
         nodeid: {{ loop.index }}
     }
 {% endfor %}
