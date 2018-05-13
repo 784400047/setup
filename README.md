@@ -8,6 +8,9 @@ the CGC cloud servers.
 1. When docker has sth wrong with network and couldn't start,try these command
         sudo rm -rf /var/lib/docker/network
         sudo systemctl start docker
+2. First things first,create namespace manually.
+        #copy: src=namespace.yml dest=/etc/kubernetes/kube-system-ns.yml
+        kubectl create -f /etc/kubernetes/kube-system-ns.yml
 
 ## Using this repository
 
