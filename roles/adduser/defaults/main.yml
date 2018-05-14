@@ -22,16 +22,7 @@ addusers:
     createhome: yes
     home: "/home/crs"
     authorized_keys:
-      - "https://git.seclab.cs.ucsb.edu/disperati.keys"
-      - "https://git.seclab.cs.ucsb.edu/mpizza.keys"
-      - "https://git.seclab.cs.ucsb.edu/machiry.keys"
-      - "https://git.seclab.cs.ucsb.edu/jacopo.keys"
-      - "https://git.seclab.cs.ucsb.edu/cao.keys"
-      - "https://git.seclab.cs.ucsb.edu/andrew.keys"
-      - "https://git.seclab.cs.ucsb.edu/salls.keys"
-      - "https://git.seclab.cs.ucsb.edu/antoniob.keys"
-      - "https://git.seclab.cs.ucsb.edu/fish.keys"
-      - "https://git.seclab.cs.ucsb.edu/yans.keys"
+
 
 adduser:
   name: "{{ user.name }}"
