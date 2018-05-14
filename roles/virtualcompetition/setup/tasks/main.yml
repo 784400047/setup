@@ -1,6 +1,6 @@
 - name: 'Clone virtual-competition repository'
   git:
-    repo="git@git.seclab.cs.ucsb.edu:cgc/virtual-competition.git"
+    repo="https://github.com/mechaphish/virtual-competition.git"
     dest="{{ addusers.crs.home }}/{{ item.path }}"
     accept_hostkey=yes
   become: yes

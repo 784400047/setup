@@ -31,7 +31,7 @@ ARG BRANCH=master
 
 RUN su - angr -c "mkdir ~/.ssh; ssh-keyscan github.com git.seclab.cs.ucsb.edu >> ~/.ssh/known_hosts"
 RUN su - angr -c "git clone git@git.seclab.cs.ucsb.edu:angr/angr-dev && cd angr-dev && \
-    ./setup.sh -i -w -p angr -r git@git.seclab.cs.ucsb.edu:cgc -D -b $BRANCH \
+    ./setup.sh -i -w -p angr -r https://github.com/mechaphish -D -b $BRANCH \
     ana idalink cooldict mulpyplexer monkeyhex superstruct \
     capstone unicorn \
     archinfo vex pyvex cle claripy simuvex angr angr-management angr-doc \

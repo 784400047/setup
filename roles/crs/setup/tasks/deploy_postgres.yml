@@ -72,7 +72,7 @@
 
 - name: 'Clone Farnsworth repository'
   git:
-    repo="git@git.seclab.cs.ucsb.edu:cgc/farnsworth.git"
+    repo="https://github.com/mechaphish/farnsworth.git"
     dest="{{ addusers.crs.home }}/farnsworth"
   become: yes
   become_user: "{{ addusers.crs.name }}"

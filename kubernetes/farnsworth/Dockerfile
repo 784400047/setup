@@ -16,7 +16,7 @@ RUN mkdir /root/.ssh && echo "StrictHostKeyChecking=no" > /root/.ssh/config
 # Invalidate cache
 ARG CACHEBUST=
 
-RUN git clone -b $BRANCH git@git.seclab.cs.ucsb.edu:cgc/farnsworth.git
+RUN git clone -b $BRANCH https://github.com/mechaphish/farnsworth.git
 RUN pip install pip --upgrade
 RUN pip install six --upgrade
 RUN pip install -e ./farnsworth

@@ -21,7 +21,7 @@ rm -rf "$work_dir"
 mkdir -p "$work_dir"
 pushd "$work_dir"
 
-git clone git@git.seclab.cs.ucsb.edu:cgc/setup.git
+git clone https://github.com/mechaphish/setup.git
 cd ./setup/kubernetes/tester-qemu-docker/
 cp "$input" "$tmp_output"
 python ./vm_setup.py "$tmp_output"

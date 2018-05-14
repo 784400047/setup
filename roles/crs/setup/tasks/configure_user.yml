@@ -1,6 +1,6 @@
 - name: 'Clone Setup repository'
   git:
-    repo="git@git.seclab.cs.ucsb.edu:cgc/setup.git"
+    repo="https://github.com/mechaphish/setup.git"
     dest="{{ addusers.crs.home }}/setup"
     accept_hostkey="yes"
     update="no"
