@@ -40,7 +40,7 @@
   when: inventory_hostname == groups['kube-master'][0]
 
 - name: FIXME - clean etcd /stolon settings
-  shell: "etcdctl rm --recursive /stolon"
+  shell: "if(( `etcdctl rm --recursive /stolon` ));then echo succ;else echo;fi"
   # Only on one kube-apiserver
   when: inventory_hostname == groups['kube-master'][0]
 
