@@ -79,7 +79,7 @@
 
 - name: 'Install peewee fork'
   pip:
-    name: "git+ssh://git@git.seclab.cs.ucsb.edu/cgc/peewee.git#egg=peewee"
+    name: "git://github.com/mechaphish/peewee.git#egg=peewee"
     virtualenv: "{{ addusers.crs.home }}/farnsworth-venv/"
     virtualenv_python: python2.7
     extra_args: "-e"
