@@ -11,6 +11,8 @@ the CGC cloud servers.
 2. First things first,create namespace manually.
         #copy: src=namespace.yml dest=/etc/kubernetes/kube-system-ns.yml
         kubectl create -f /etc/kubernetes/kube-system-ns.yml
+3. Install cpufreq in all hosts.
+        sudo apt-get install indicator-cpufreq
 
 ## Using this repository
 
