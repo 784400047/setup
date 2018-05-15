@@ -12,7 +12,7 @@
     - { role: etcd, tags: etcd }
     - { role: docker, tags: docker }
 #    2017/05/13
-#    - { role: imageprovision, tags: imageprovision }
+    - { role: imageprovision, tags: imageprovision }
     - { role: kubernetes/node, tags: node }
 
 - hosts: kube-master
