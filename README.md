@@ -12,7 +12,10 @@ the CGC cloud servers.
         #copy: src=namespace.yml dest=/etc/kubernetes/kube-system-ns.yml
         kubectl create -f /etc/kubernetes/kube-system-ns.yml
 3. Install cpufreq in all hosts.
-        sudo apt-get install indicator-cpufreq
+        sudo apt-get install cpufrequtils
+4. Kill apt lock.
+        sudo rm /var/lib/apt/lists/lock
+        sudo 
 
 ## Using this repository
 
