@@ -14,6 +14,11 @@
     - git
     - curl
     - htop
+    - cpufrequtils
+    - python-pip
+
+- name: 'Install Ansible'
+  shell: pip install ansible>=2.1.0 netaddr
 
 - name: 'Install postgres client scripts'
   include: postgres-client.yml
